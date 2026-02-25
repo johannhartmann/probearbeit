@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probearbeit Pitch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css" />
+    <style>
+      .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+      .reveal section { text-align: left; }
+      .reveal .small { font-size: 0.7em; }
+      .reveal .accent { color: #0b7285; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="slides.md"
+          data-separator="^---$"
+          data-separator-vertical="^--$"
+          data-separator-notes="^Note:"
+        ></section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+    <script>
+      const deck = new Reveal({
+        hash: true,
+        width: 1280,
+        height: 720,
+        margin: 0.06,
+        transition: "slide",
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+      deck.initialize();
+    </script>
+  </body>
+</html>
